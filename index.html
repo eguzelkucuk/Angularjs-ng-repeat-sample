@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular MVC Örnek </title>
+        <script src="js/angular.min.js"></script>
+		  <script src="js/angular-locale_tr-tr.js"></script>
+		
+    </head>
+    <body ng-controller="MyController">
+	
+	<div ng-repeat="Customer in ourCustomer">
+	{{Customer}}
+	</div>
+	
+	
+	<script>
+	function MyController($scope) {
+ var Customers = [
+ 'Erkan GÜZELKÜÇÜK',
+ 'İsmail ILGAR',
+ 'Deniz ÇAKIROĞLU',
+ 'Dilek GÜZELKÜÇÜK'
+ ];
+ $scope.ourCustomer = Customers;
+ }
+	</script>
+	
+	</body>
+	</html>
